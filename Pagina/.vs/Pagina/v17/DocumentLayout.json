@@ -1,0 +1,326 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Proiect WEB\\Pagina\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|e:\\proiect web\\pagina\\pagina\\pages\\generarepaginauniversitate\\layout\\layoutpagina.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\generarepaginauniversitate\\layout\\layoutpagina.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|e:\\proiect web\\pagina\\pagina\\pages\\generarepaginauniversitate\\facultatiuniversitate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\generarepaginauniversitate\\facultatiuniversitate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\accesingpages\\details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\accesingpages\\details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\accesingpages\\dbelements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\accesingpages\\dbelements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\accesingpages\\register\\registeroperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\accesingpages\\register\\registeroperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\accesingpages\\register\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\accesingpages\\register\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\materialelemele\\materialelemele.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\materialelemele\\materialelemele.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\materialelemele\\materialelemele.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\materialelemele\\materialelemele.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\materialelemele\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\materialelemele\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\materialelemele\\filemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\materialelemele\\filemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\shared\\indexshared\\_layoutindx.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\shared\\indexshared\\_layoutindx.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\shared\\indexshared\\_layoutindx.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\shared\\indexshared\\_layoutindx.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\accesingpages\\login\\loginpagina.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\accesingpages\\login\\loginpagina.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\generarepaginauniversitate\\getterfacultati.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\generarepaginauniversitate\\getterfacultati.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\generarepaginauniversitate\\facultatiuniversitate.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\generarepaginauniversitate\\facultatiuniversitate.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|E:\\Proiect WEB\\Pagina\\pagina\\pages\\generarepaginauniversitate\\valoareuniversitate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56D51A2C-81E5-4229-922E-8ACB3F84DF74}|Pagina\\Pagina.csproj|solutionrelative:pagina\\pages\\generarepaginauniversitate\\valoareuniversitate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LayoutPagina.cshtml",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\GenerarePaginaUniversitate\\Layout\\LayoutPagina.cshtml",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\GenerarePaginaUniversitate\\Layout\\LayoutPagina.cshtml",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\GenerarePaginaUniversitate\\Layout\\LayoutPagina.cshtml",
+              "RelativeToolTip": "Pagina\\Pages\\GenerarePaginaUniversitate\\Layout\\LayoutPagina.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T09:43:39.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DBElements.cs",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\AccesingPages\\DBElements.cs",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\AccesingPages\\DBElements.cs",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\AccesingPages\\DBElements.cs",
+              "RelativeToolTip": "Pagina\\Pages\\AccesingPages\\DBElements.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T15:01:21.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterOperations.cs",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\AccesingPages\\Register\\RegisterOperations.cs",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\AccesingPages\\Register\\RegisterOperations.cs",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\AccesingPages\\Register\\RegisterOperations.cs",
+              "RelativeToolTip": "Pagina\\Pages\\AccesingPages\\Register\\RegisterOperations.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T22:01:32.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MaterialeleMele.cshtml",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\MaterialeleMele\\MaterialeleMele.cshtml",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\MaterialeleMele\\MaterialeleMele.cshtml",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\MaterialeleMele\\MaterialeleMele.cshtml",
+              "RelativeToolTip": "Pagina\\Pages\\MaterialeleMele\\MaterialeleMele.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T13:52:39.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FileModel.cs",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\MaterialeleMele\\FileModel.cs",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\MaterialeleMele\\FileModel.cs",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\MaterialeleMele\\FileModel.cs",
+              "RelativeToolTip": "Pagina\\Pages\\MaterialeleMele\\FileModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T16:51:12.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cs",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\AccesingPages\\Details.cs",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\AccesingPages\\Details.cs",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\AccesingPages\\Details.cs",
+              "RelativeToolTip": "Pagina\\Pages\\AccesingPages\\Details.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAmwE8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T14:03:45.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FacultatiUniversitate.cshtml",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\GenerarePaginaUniversitate\\FacultatiUniversitate.cshtml",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\GenerarePaginaUniversitate\\FacultatiUniversitate.cshtml",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\GenerarePaginaUniversitate\\FacultatiUniversitate.cshtml",
+              "RelativeToolTip": "Pagina\\Pages\\GenerarePaginaUniversitate\\FacultatiUniversitate.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T17:07:55.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_LayoutIndx.cshtml",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\Shared\\IndexShared\\_LayoutIndx.cshtml",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\Shared\\IndexShared\\_LayoutIndx.cshtml",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\Shared\\IndexShared\\_LayoutIndx.cshtml",
+              "RelativeToolTip": "Pagina\\Pages\\Shared\\IndexShared\\_LayoutIndx.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAC4AAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T17:21:01.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\AccesingPages\\Register\\Register.cshtml",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\AccesingPages\\Register\\Register.cshtml",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\AccesingPages\\Register\\Register.cshtml",
+              "RelativeToolTip": "Pagina\\Pages\\AccesingPages\\Register\\Register.cshtml",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAACkAAACCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T22:01:34.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\MaterialeleMele\\FileController.cs",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\MaterialeleMele\\FileController.cs",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\MaterialeleMele\\FileController.cs",
+              "RelativeToolTip": "Pagina\\Pages\\MaterialeleMele\\FileController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T16:51:46.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MaterialeleMele.cshtml.cs",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\MaterialeleMele\\MaterialeleMele.cshtml.cs",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\MaterialeleMele\\MaterialeleMele.cshtml.cs",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\MaterialeleMele\\MaterialeleMele.cshtml.cs",
+              "RelativeToolTip": "Pagina\\Pages\\MaterialeleMele\\MaterialeleMele.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T14:07:57.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\Index.cshtml.cs",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pagina\\Pages\\Index.cshtml.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T17:20:51.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Program.cs",
+              "RelativeDocumentMoniker": "Pagina\\Program.cs",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Program.cs",
+              "RelativeToolTip": "Pagina\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T17:25:43.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_LayoutIndx.cshtml.css",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\Shared\\IndexShared\\_LayoutIndx.cshtml.css",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\Shared\\IndexShared\\_LayoutIndx.cshtml.css",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\Shared\\IndexShared\\_LayoutIndx.cshtml.css",
+              "RelativeToolTip": "Pagina\\Pages\\Shared\\IndexShared\\_LayoutIndx.cshtml.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-27T17:28:12.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\Index.cshtml",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pagina\\Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T17:20:54.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginPagina.cshtml.cs",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\AccesingPages\\Login\\LoginPagina.cshtml.cs",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\AccesingPages\\Login\\LoginPagina.cshtml.cs",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\AccesingPages\\Login\\LoginPagina.cshtml.cs",
+              "RelativeToolTip": "Pagina\\Pages\\AccesingPages\\Login\\LoginPagina.cshtml.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAAD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T13:59:28.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetterFacultati.cs",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\GenerarePaginaUniversitate\\GetterFacultati.cs",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\GenerarePaginaUniversitate\\GetterFacultati.cs",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\GenerarePaginaUniversitate\\GetterFacultati.cs",
+              "RelativeToolTip": "Pagina\\Pages\\GenerarePaginaUniversitate\\GetterFacultati.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T17:16:05.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FacultatiUniversitate.cshtml.cs",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\GenerarePaginaUniversitate\\FacultatiUniversitate.cshtml.cs",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\GenerarePaginaUniversitate\\FacultatiUniversitate.cshtml.cs",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\GenerarePaginaUniversitate\\FacultatiUniversitate.cshtml.cs",
+              "RelativeToolTip": "Pagina\\Pages\\GenerarePaginaUniversitate\\FacultatiUniversitate.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T17:08:05.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ValoareUniversitate.cs",
+              "DocumentMoniker": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\GenerarePaginaUniversitate\\ValoareUniversitate.cs",
+              "RelativeDocumentMoniker": "Pagina\\Pages\\GenerarePaginaUniversitate\\ValoareUniversitate.cs",
+              "ToolTip": "E:\\Proiect WEB\\Pagina\\Pagina\\Pages\\GenerarePaginaUniversitate\\ValoareUniversitate.cs",
+              "RelativeToolTip": "Pagina\\Pages\\GenerarePaginaUniversitate\\ValoareUniversitate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T17:08:01.673Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

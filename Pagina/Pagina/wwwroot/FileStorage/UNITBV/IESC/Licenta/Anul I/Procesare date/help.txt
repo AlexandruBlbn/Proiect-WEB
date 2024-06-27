@@ -1,0 +1,44 @@
+create database Exemplu_b;
+use Exemplu_b;
+
+create table Student(
+	CodS char(5) constraint pk_CodS PRIMARY KEY,
+	Nume char(10),
+	Prenume char(25),
+	Data_inceput datetime,
+	Data_sfarsit datetime null,
+	Situatie char(1),
+	Inv char(1),
+	Sex char(1) default 'B' constraint ck_Sex check(sex in('F','B')),
+);
+
+insert into Student(CodS, Nume, Prenume, Data_inceput, Data_sfarsit, Situatie, Inv, Sex)
+	values ('001','Banu','Andrei','1990.10.01','1995.06.15','B','Z','B');
+
+delete from Note 
+	where CodS=006
+
+update Student
+	set jud='BV'
+	where CodS='002';
+
+create table Nume --Se inlocuieste 'Nume' cu numele de familie inainte de a se rula
+(
+	marca int,
+	nume varchar(20) not null,
+	datan datetime,
+	compart varchar(15) not null,
+	marcasef int,
+	salartarifar int not null,
+	Primary key(marca)
+);
+create table Nume0773327115 --Se inlocuieste 'Nume0773327115' cu numele de familie si un numar inainte de a se rula
+(
+	an int,
+	marca int constraint marcasef references Nume(marca),--Se inlocuieste 'Nume' cu numele primului tabel inainte de a se rula
+	luna int,
+	sporvechime int default 0,
+	spornoapte int default 0,
+);
+
+SET Taxa = Taxa*1.1 from Student inner join Note on Student.CodS=Note.CodS

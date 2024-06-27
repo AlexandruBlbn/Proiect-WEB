@@ -1,0 +1,26 @@
+﻿@page
+@model Pagina.Pages.AccesingPages.LoginPagina
+@{
+    ViewData["Title"] = "Logare";
+    Layout = "~/Pages/AccesingPages/Layouts/_NoLayout.cshtml";
+}
+
+
+<link rel="stylesheet" href="~/css/LoginStyle.css"/>
+
+<div id="LogForm" class="centered bs-cont">
+    <p  class="text-center Title">Login</p>
+
+    <form method="post" asp-page-handler="Login">
+    <div id="Form">
+            <input class="text-center" type="text" placeholder="Username" asp-for="Username" required>
+            <input class="text-center" type="password" placeholder="Password" asp-for="Password" required>
+        <button class="btn text-center" type="submit">Login</button>
+   @Model.LoginError
+    </div>
+    </form>
+    <p id="text">You don't have an account?</p>
+    <a asp-page="../Register/Register"><p id="link" class="text-center">Sign up</p></a>
+    <a asp-page="#"><p id="text">Recover</p></a>
+
+</div>

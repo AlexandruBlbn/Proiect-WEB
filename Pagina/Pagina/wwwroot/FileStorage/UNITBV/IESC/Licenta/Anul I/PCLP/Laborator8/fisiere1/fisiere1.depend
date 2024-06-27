@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1638900008 source:c:\users\mariu\desktop\facultate\pclp\laborator8\fisiere1\main.cpp
+	<iostream>
+	<fstream>
+	<conio.h>
+	<string.h>
+

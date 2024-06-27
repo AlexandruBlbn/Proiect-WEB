@@ -1,0 +1,82 @@
+<html>
+<head>
+    <style>
+     * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+    }
+
+    html {
+       font-size: 16px;
+       text-align: center;
+       background-color: #ccc;
+      font-family: "Georgia";
+    }
+    
+@font-face {
+   font-family: 'Open Sans';
+   src: url(open-sans/OpenSans-Regular.ttf);
+}
+
+html {
+   font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+
+    
+    .decoration {
+        color: red;
+        font-family: "Courier New";
+        text-decoration: underline;
+    }
+    
+    .decoration_h2 {
+        color: blue;
+    }
+
+    #idh3 {
+        color: magenta;
+    }
+    
+    #idh4 {
+        color: green;
+    }
+    
+    #idh5 {
+        color: pink;
+    }
+    
+    p {
+        font-family: "Arial";
+        font-size: 12px;
+        font-style: italic;
+    }
+    
+    
+    p strong {
+        color: green;
+    }
+        
+    </style>
+</head>
+<body>
+	<h1 class="decoration">A Simple Sample Web Page</h1>
+	<h2 class="decoration_h2">Demonstrating a few HTML features</h2>
+	HTML is really a very simple language.  It consists of ordinary text, with commands that are enclosed by "&lt;" and "&gt;" characters, or bewteen an "&amp;" and a ";". 
+	<h3>Line Breaks</h3>
+	HTML< doesn't normally use line breaks for ordinary text.  A white space of any size is treated as a single space.  This is because the author of the page has no way of knowing the size of the reader's screen, or what size type they will have their browser set for.
+	<h4>Starting and Stopping Commands</h4>
+	Most HTML commands come in pairs: for example, "&lt;H4&gt;" marks the beginning of a size 4 heading, and "&lt;/H4&gt;" marks the end of it.  The closing command is always the same as the opening command, except for the addition of the "/".
+	<h1 class="decoration">This is a size "1" heading</h1>
+	<h2 class="decoration_h2">This is a size "2" heading</h2>
+	<h3 id="idh3">This is a size "3" heading</h3>
+	<h4 id="idh4">This is a size "4" heading</h4>
+	<h5 id="idh5">This is a size "5" heading</h5>
+	<p><strong>Tags</strong> usually come in pairs. <strong>The opening tag</strong> denotes the start of a piece of content; <strong>the closing tag</strong> denotes the end.
+	   <i><strong>Opening tags</strong></i> can carry attributes, which tell us more about the content of that element. Attributes require a name and a value.
+	   To learn HTML you need to know what tags are available for you to use, what they do, and where they can go.</p>
+	<p>HTML elements are used to describe the structure of the page (e.g. headings, subheadings, paragraphs). They also provide semantic information
+   	  (e.g. where emphasis should be placed, the definition of any acronyms used, when given text is a quotation).</p>
+</body>
+</html>

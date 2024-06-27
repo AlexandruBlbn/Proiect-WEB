@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+     /*corespunde oricarui element <i> care este descent al unui element <p>,
+	   dar nu copil direct (ci nepot)*/
+	  p * i {
+		text-transform: uppercase;
+    
+   }
+   .h1.i {
+    color: #ee3e80;
+   }
+   .div.b
+   {
+     text-transform: uppercase;
+   }
+   p * b
+   {
+     color: rgb(70, 170, 70);
+   }
+  </style>
+</head>
+<body>
+  <h1> heading 1 <i class="h1 i">italic</i> heading  1 </h1>
+  <div> division <b class="div b" >bold</b> division </div>
+  <p>paragraph<i> italic <b> bold </b> italic </i> paragraph </p>
+  <p><span><i> italic in span in paragraph<i></span></p>
+</body>
+</html>

@@ -1,0 +1,126 @@
+﻿@page
+@model Pagina.Pages.AccesingPages.Register.RegisterModel
+@{
+    ViewData["Title"] = "Inregistrare";
+    Layout = "~/Pages/AccesingPages/Layouts/_NoLayout.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/RegisterStyle.css" asp-append-version="true" />
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+@* <script>
+    $(document).ready(function () {
+        $("#University").change(function () {
+            var university = $(this).val();
+            $.get("?handler=Faculties", { university: university })
+                .done(function (data) {
+                    $("#Faculty").empty();
+                    $.each(data, function (key, value) {
+                        $("#Faculty").append($("<option></option>").attr("value", value.name).text(value.name));
+                    });
+                })
+                .fail(function (xhr, status, error) {
+                    console.error("Error fetching faculties: " + xhr.responseText);
+                });
+        });
+    });
+
+</script> *@
+
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#University").change(function () {
+                var university = $(this).val();
+                $.get("?handler=Faculties", { university: university })
+                    .done(function (data) {
+                        $("#Faculty").empty().append('<option value="" disabled selected>Select faculty</option>');
+                        $.each(data, function (key, value) {
+                            $("#Faculty").append($("<option></option>").attr("value", value.name).text(value.name));
+                        });
+                        $("#Specialization").empty().append('<option value="" disabled selected>Select specialization</option>'); 
+                    })
+                    .fail(function (xhr, status, error) {
+                        console.error("Error fetching faculties: " + xhr.responseText);
+                    });
+            });
+
+            $("#Faculty").change(function () {
+                var faculty = $(this).val();
+                $.get("?handler=Specializations", { faculty: faculty })
+                    .done(function (data) {
+                        $("#Specialization").empty().append('<option value="" disabled selected>Select specialization</option>');
+                        $.each(data, function (key, value) {
+                            $("#Specialization").append($("<option></option>").attr("value", value.name).text(value.name));
+                        });
+                    })
+                    .fail(function (xhr, status, error) {
+                        console.error("Error fetching specializations: " + xhr.responseText);
+                    });
+            });
+        });
+    </script>
+}
+
+<div id="LogForm" class="centered bs-cont">
+    <p class="text-center Title">Create an account</p>
+
+    <form method="post">
+        <div id="Form">
+            <div class="row justify-content-evenly">
+
+
+                <div class="col-sm-5">
+                    <div class="row m-sm-1">
+                        <p class="subTitle text-center m-sm-1">Login details</p>
+                        <input class="text-center" type="text" placeholder="Username" asp-for="Username" required>
+                    </div>
+                    <div class="row m-sm-1">
+                        <input class="text-center" type="text" placeholder="Recovery Email" asp-for="RecoveryEmail" required>
+                    </div>
+                    <div class="row m-sm-1">
+                        <input class="text-center" type="password" placeholder="Password" asp-for="Password" required>
+                    </div>
+                    <div class="row m-sm-1">
+                        <input class="text-center" type="password" placeholder="Confirm password" asp-for="ConfirmPassword" required>
+                    </div>
+                    
+                </div>
+
+
+
+                <div class="col-sm-5">
+                    <div class="row m-sm-1">
+                        <p class="subTitle text-center m-sm-1">Student details</p>
+                        <select class="selectpicker text-center text-white" asp-for="University" id="University" name="University">
+                            <option value="" disabled selected>Select your university</option>
+                            @foreach (var university in Model.UniversityList)
+                            {
+                                <option value="@university.Name">@university.Name</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="row m-sm-1">
+                        <select class="selectpicker text-center text-white" id="Faculty" asp-for="Faculty" name="Faculty">
+                            <option value="" disabled selected>Select faculty</option>
+                        </select>
+                    </div>
+                    <div class="row m-sm-1">
+                        <select class="selectpicker text-center text-white" id="Specialization" asp-for="Specialization" name="Specialization">
+                            <option value="" disabled selected>Select specialization</option>
+                        </select>
+                    </div>
+                        <div class="row m-sm-1">
+                            <input class="text-center" type="email" placeholder="InstitutionalMail" asp-for="InstitutionalEmail" required>
+                        </div>
+                </div>
+            </div>
+
+            <button class="btn" type="submit">Register</button>
+        </div>
+    </form>
+
+    <p id="text">You have an account?</p>
+    <a asp-page="../Login/LoginPagina"><p id="link" class="text-center">Sign in</p></a>
+</div>

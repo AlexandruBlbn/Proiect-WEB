@@ -1,0 +1,93 @@
+﻿body {
+    background-color: #212A3E;
+}
+
+.spacer {
+height: 100px;
+}
+
+.Centru {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+    .Centru::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../Images/banner.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(6px);
+        -webkit-filter: blur(8px);
+        z-index: -1;
+    }
+
+
+@font-face {
+    font-family: Primary;
+    src: url(../Fonts/KGPrimaryItalics.ttf);
+}
+
+#titlu {
+    font-family: Primary;
+    font-size: 5rem;
+    color: aliceblue;
+    text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+    -webkit-text-stroke: 0px #F8F8F8;
+    text-shadow: 0px 1px 5px #23430C;
+}
+
+#subtititluMain {
+    font-family: Primary;
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+    -webkit-text-stroke: 0px #F8F8F8;
+    text-shadow: 0px 1px 5px #23430C;
+}
+
+@media (max-width: 480px) {
+    #titlu {
+        font-size: 12vw;
+    }
+
+    #subtitluMain {
+        font-size: 12vw;
+    }
+}
+
+#div-informatii {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: #9BA4B5;
+    font-size: 1.4rem;
+    font-family: 'UT Sans';
+    font-weight: bold;
+    -webkit-text-stroke: 0px #F8F8F8;
+    text-shadow: 0px 1px 5px #23430C;
+    border-radius: 10px;
+}
+
+
+.titluInformatii {
+    font-family: Primary;
+    font-size: 3rem;
+    color: #212A3E;
+    text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+    -webkit-text-stroke: 0px #F8F8F8;
+    text-shadow: 0px 1px 5px #23430C;
+}

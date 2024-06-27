@@ -1,0 +1,132 @@
+﻿@font-face {
+    font-family: TitleFont;
+    src: url('../Fonts/Super Creamy Personal Use.ttf');
+}
+
+body {
+    background-color: #011222;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bs-cont {
+    box-shadow: 0px 10px 15px 16px rgba(0,0,0,0.5);
+}
+
+#LogForm {
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 50px;
+    padding-bottom: 20px;
+    border: 2px solid gray;
+    box-shadow: 1px;
+    border-radius: 5px;
+}
+
+#Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    margin: 10px 0px;
+}
+
+.Title {
+    font-family: TitleFont;
+    font-size: 30px;
+    background: -webkit-linear-gradient(90deg, rgba(9,121,23,1) 0%, rgba(9,0,167,1) 0%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.btn {
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+}
+
+.btn {
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, rgba(9,0,167,1) 0%, rgba(0,212,255,1) 100%);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    color: white;
+}
+
+    .btn:hover {
+        transform: translateY(3px);
+        box-shadow: none;
+    }
+
+    .btn:active {
+        opacity: 0.5;
+    }
+
+#text {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #F0F8FF;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#link {
+    margin-top: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
+}
+
+    #link:hover {
+        color: darkblue;
+    }
+
+input {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    box-shadow: 0px 5px 8px 5px rgba(0,0,0,0.5);
+}
+
+select {
+    background: none;
+    border: 1px solid white;
+    color: black;
+    box-shadow: 0px 5px 8px 5px rgba(0,0,0,0.5); 
+    margin-bottom: 11px;
+}
+
+option {
+color: black;
+}
+
+
+
+
+
+.subTitle {
+font-size: 2rem;
+color: aqua;
+}
+

@@ -1,0 +1,407 @@
+Test1
+
+Care dintre urmatorele restrictii trebuie aleasa pentru a obtine asigurarea ca un camp dintr-un tabel cotine doar caracterele 'B' sau 'G'
+  Constraint
+
+Se modifica tabelul EX1 folosind comanda ALTER TABLE EX1 Drop Column coloana_b int. Se primeste mesajul de eroare "incorrect syntax near int" care este motivul
+   Comanda de modificare nu este corecta
+
+Care dintre urmatoarele tipuri de date este celmai potrivit pentru identificatorul unei persoane atunci cand exista posibilitateaa alegerii tipului de data si nu apar restrictii suplimentare
+  INTEGER
+
+Se creaza tabelul LISTA_AUTOR care are atributele ID_Autor,ID_Carte,Roi.Tabelula re o cheie primara compusa formata
+din campurie:ID_Autor si ID_Carte. Care forma de screiere nu este corecta?
+CONSTRAINT pk_Autor PRIMARY KEYC(ID..Autor),CONSTRAINT pk_Carte PRIMARY KEY(ID_Carte)
+
+Pentru a introduce o coloana noua intr-un tabel se foloseste comanda:
+ ALTER TABLE EX1Add coloana_b int
+
+Se modifica tabelul EX1, folosind comanda:ALTER TABLE Add Column coloana_bint. Se primeste mesajul de eroare:
+Incorrect syntax near the keyword 'add'."". Care este motivul?"
+Comanda de modificare nu este corecta
+
+Tabelul LISTA_AUTOR este legal prin intermediul unei chei externe de tabelul AUTOR.Daca se doreste sa se elimine tabelul	
+"AUTOR,apare un mesaj de eroare.Care este motivul?
+Nu se poate elimina tabelul parinte decat dupa ce s a eliminat tabelul copil
+
+In MS SQL Server se foloseste sintaxa: CREATE TABLE Ex2 (coloana_a INT CONSTRA INT un_coloana_a UNIQUE) care
+"produce urmatorul raspuns:""There is already an object named 'un_coloana_a·in the database .Care este motivul?
+Comanda contine numele unei constringeri care a mai fest folosit anterior de catre altcineva
+
+In MS SQL Server se creeaza o baza de date noua numita BD1. n aceasta baza de date se creeaza un tabelnumit EX1.Se
+inchide MS SQL Server si se deschide din nou. Se cauta tabelul cu comanda:SELECT • FROM TABLE ex1.Se obtine
+"raspunsul: ""Invalid object name ·ex1·. Care este motivul?"
+Tabelula a fost creat in alta locatie decat cea  care va aflati cand faceti cererea
+
+In MS SQL Server se foloseste sintaxa: CREATE TABLE Ex1 (coloana_a INT CONSTRA INT un_coloana_a UNIQUE) care
+"produce urmatorul raspuns:'""There is already an object named 'Ex1'in the database .Care este motivul?"
+Comanda a fast executata de doua ori
+
+Se creaza tabelul LISTA_AUTOR care are atributele ID_Autor,ID_Carte,Roi.Tabelula re o cheie primara compusa,formata"
+din campurie:ID_Autor si ID_Carte. Care forma de scr iere nu este corecta?
+CONSTRAINT pk_Autor PRIMARY KEYCID..Autor),CONSTRAINT pk...Carte PRIMARY KEY(ID_Carte)
+
+
+Test2
+
+Se introduce clauza de creare a tabelului Note si se apasa tastele CTRL+F5.
+CREAT E TABLE Note
+"CodS CHAR(S) CONSTRAINT fk_student_note REFERENCES Student(CodS),"
+"Curs CHAR(15), Nata DECIMAL(S,2), An CHAR(1),"
+Taxa INT
+"CONSTRAINT pk_note PRIMARY KEY(CodS,Curs, An)"
+);
+"Se introduce clauza de regasire a datelor: SELECT * FROM Note si apare mesajul:'Invalid object name 'Note"".Ce s-a intamplat?"
+Tabelul Note a fast doar verificat
+
+Pentru a elimina o coloana  ntr-un tabel se foloseste sintaxa:
+ALTER TABLE EX1 Drop Column coloana_b
+
+In linia urmatoare se cere sa se introduca  in campul Jud valoarea BV.
+CodS  Nume    Prenume   Jud
+001  Banu     Andrei    NULL
+Pentru a face acest lucru se va folosi sintaxa:
+UPDATE Student SET Jud='BV' WHERE CodS=""001"""
+
+Pentru a indexa o coloa na dintr-un tabel ce are o valoare implicita de 0,81 se foloseste sintaxa:
+ ALTER TABLE Ex1 ADD coloana_a INT CONSTRA INT uq_coloana_d UNIQUE
+
+Pentru inserarea primuluirand din tabelul Student se foloseste sintaxa:
+INSERT INTO Student(CodS,Nume,Prenume,Data_inceput,Data_sfarsit, Situatie,lnvatamant, Sex ,Jud) VALUES('001', 'Banu', 'Andrei', '01.11.2002"", null,""B', 'Z', 'B"",""BV');"
+
+In MS SQL Server se introduc clauzele:
+ALTER TABLE Ex1ADD coloana_ b VARCHAR(20) NULL
+ALTER TABLE Ex1DROP COLUMN coloana_b
+Apare mesajul: 'Column names in each table must be unique. Column name 'coloana_b'in table 'Ex1·is specified more than once'.Care este motivul aparitiei acestui mesaj?
+Toate variantele sunt corecte
+
+In MS SQL Server se doreste crearea in cadrul unui tabel a unei coloanein care sa se pastreze ora la care s-a facut o
+inregistrare. Tipul de data folosit in acest caz este:
+TIME
+
+Se introduce clauza:
+CREATE TABLE Student
+"CodS CHAR(S) CONSTRAINT pk_cod PRIMARY KEY,;"
+"Nume CHAR(15),;"
+"Prenume CHAR(25),; Oras CHAR(15),;"
+"Data_lnceput DATETIME,; Data_sfarsit  DATETIME,;"
+"Situatie CHAR(1),; Inv CHAR(1),;"
+"Sex CHAR(l) DEFAULT 'B' CONSTRAINT ck_sex CHECK(sex IN('F','B')),;"
+);
+Apare mesajul:'Incorrect syntax near ';'.' Care este motivulaparitieiacestui mesaj?
+Clauza se incheie dupa ultima paranteza rotunda
+
+Pentru a stergeinregistrarea cu codul studentului ""006"" din tabelulStudent se foloseste sintaxa:
+ DELETE FROM Note WHERE CodS= '006';DELETE FROMStudent WHERE CodS='006'
+
+Care dintre urmatoarele comenzi de creare a unui abeleste corecta?
+CREATE TABLE Ex1 ( coloana_a INT CONSTRAINT un_coloana_a UNIQUE)
+
+
+Test3
+
+In MS SQL Server se introduce clauza:
+CREATE TABLE Exl(coloana_a INT CONSTRAINT un_coloana_a UNIQUE)Apoise dorete sa se vada rezultatul. Pentru aceasta:
+Trebuie mai 1ntaicreat tabelulprin executarea clauzeide creare iapoiclauza SELECT • FROM EX1.
+
+
+Care dintre urmatoarele afirmatii nu este adevarata?
+Componentele software pot fi construite folosind doar limbaje orientate pe obiecte
+
+Se cere si se modifice campul An din tabelul Note astfel incat acesta sa aibe tipul de data de tip intreg. Pentru aceasta se
+poate scrie:
+ALTER TABLE Note DROP COLUMN An si apoi ALTER TABLE Note ADD An int
+
+Se da tabelul:
+CodS Curs Nota An Taxa
+002 Chimie 9.00 1 NULL
+002 Fizica Â«10.00 1 NULL
+005 Chimie 5.00 1 NULL
+005 Engleza 7.00 1 NULL
+005 Fizica 600 1 NULL
+005 storie 7.00 1 NULL
+006 P.C. 900 2 NULL
+006 TBD. 10.00 4 NULL
+Se actualizeaza datele din coloana Taxa, astfel rezultatu va fii:
+NULL
+
+Se creeaza un camp nou numit Valoare care este de tip numeric cu 4 cifre la partea intreaga si doua cifre la partea
+zecimal8. Pentru aceasta se introduce clauza: ALTER TABLE Student ADD Valoare DECIMAL(4,2). Este corect?
+Nu
+
+Atunci cand se vorbeste despre semantica datelor se face referire la:
+Modul de reprezentare a datelor
+
+Pentru ca de la date elementare sa se ajunga la informatii brute trebuie sd se efectueze:
+Toate cele mentionate
+
+O componenta este:
+O parte de cod ce poate fi introdus in cadrul altor componente
+
+Pentru a transimite date de la baza de date la client trebuie realizata o aplicatie care aer trebui sa posede o arhitectura pe trei nivele:server-aplicatie-client.Specificati care dintre urmatorele nu poate sa fie client
+Persoana
+
+Bazele de date reprezinta de fapt replica iformatizata a bibliotecilor traditionale
+Adevarat
+
+Test4
+
+In care dintre urmatorele predicate se pot folosi caractere de inlocuire
+LIKE
+
+Care dintre urmatorele preidcate trebuie folosite in mod obligatoriu impreuna cu o subinterogare
+EXISTS
+
+Mecanismul prin care intr-un tabel al unei baze de date se poate verifica unicitatea unei inregistrari se numeste
+Cheie primara
+
+O colectie de obiecte care au identitate proprie si sunt caracterizxate de o cinditie de apartenenta reprezinta
+O colectie de date
+
+Operatorul logic AND folosit in cadrul unui tabel produce urmatorul rezultat intre o valoare adevarata si o valoare necunoscuta
+Necunoscut
+
+Orice relatie reflexiva simetrica si tranzitiva este o relatie
+Binara
+
+Care dintre umatorele proprietati nu caracterizeaza o relatie matematica
+Intr-o relatie tuplurile sunt neordonate
+
+Se cere sa se gaseasca toate valorile "Da" dintr-o coloana a unui tabel. Care dintre urmatoarele secvente de sintaxa este cea corecta?
+SELECT student.Nume, student.Prenume
+FROM student
+WHERE (((student.Nume) Like 'Da'));
+
+Care dintre urmatorele interogari este corecta?
+ SELECT Student.Nume, Student.Prenume, Note.Nota
+FROM Student INNER JOIN (Note] ON Student.Cods = Note.Cods WHERE (((Note.Nota)=5)) UNION
+SELECT Student.Nume, Student Prenume, Note.Nota FROM Student INNER JOIN [Note] ON Student.Cods = Note.Cods WHERE (((Note.Nota) >=7));
+
+Care dintre urmatoarele sintaxe este cea corecta?
+SELECT student.Nume, student.Prenume
+FROM student WHERE EXISTS(SELECT * FROM [note] WHERE note.cods=student.cods);
+
+Test5
+
+Se doreste sa se afle toate valorile din cadrul unei coloane a unui tabel cu exceptia celor necunoscute.Pentrua face acest lucru se va scrie 
+IS NOT NULL
+
+Pentru a pastra permanent suma totala a taxelor din tabelul Note se creeaza o coloana noua in tabelul Note care se denumeste de exemplu Suma_taxe dupa care se insereaza rezultatul
+obtinut prin folosirea clauzei SELECT Sum(taxa) From Note in aceasta coloana
+Fals
+
+O coloana a unui tabel este de tip caracter.In acea coloana nu se doreste sa se introduca o valoare in acel moment.c Care dintre urmatorele variante este cea corecta pentru 
+a face acest lucru
+INSERT INTO Tabel1(a) Values(' ')
+
+Se dă tabelul Note cu valorile: 
+002 Chimie 9.00 1 NULL
+002 Fizica 10.00 1 NULL 
+005 Chimie 5.00 1 NULL 
+005 Engleza 7.00 1 NULL 
+005 Fizica 6.00 1 35.50 
+005 Istorie 7.00 1 35.50 
+006 P.C.I 9.00 1 NULL 
+006 P.C.II 10.00 1 NULL 
+În MS SQL Server rezultatul interogării: SELECT TOP 1 WITH TIES nota FROM Note este:
+Un mesaj de eroare deoarece nu apare clauza ORDER BY 
+
+Se da tabelul NOte cu valorile
+002 Chimie 9.00 1 NULL
+002 Fizica 10.00 1 NULL 
+005 Chimie 5.00 1 NULL 
+005 Engleza 7.00 1 NULL 
+005 Fizica 6.00 1 35.50 
+005 Istorie 7.00 1 35.50 
+006 P.C.I 9.00 1 NULL 
+006 P.C.II 10.00 1 NULL
+Care este rezultatul interogarii SELECT COUNT(3) in MS SQL Server?
+1
+
+Pentru a determina care studentii cu cele mai mari note din tabelul 
+002 Chimie 9.00 1 NULL
+002 Fizica 10.00 1 NULL 
+005 Chimie 5.00 1 NULL 
+005 Engleza 7.00 1 NULL 
+005 Fizica 6.00 1 35.50 
+005 Istorie 7.00 1 35.50 
+006 P.C.I 9.00 1 NULL 
+006 P.C.II 10.00 1 NULL
+se foloseste interogarea
+Nici una dintre interogarile mentionate nu este corecta
+
+Se da tabelul NOte cu valorile
+002 Chimie 9.00 1 NULL
+002 Fizica 10.00 1 NULL 
+005 Chimie 5.00 1 NULL 
+005 Engleza 7.00 1 NULL 
+005 Fizica 6.00 1 35.50 
+005 Istorie 7.00 1 35.50 
+006 P.C.I 9.00 1 NULL 
+006 P.C.II 10.00 1 NULL
+Care este rezultatul interogarii SELECT COUNT(taxa) FROM Note in MS SQL Server?
+2
+
+Se da tabelul NOte cu valorile
+002 Chimie 9.00 1 NULL
+002 Fizica 10.00 1 NULL 
+005 Chimie 5.00 1 NULL 
+005 Engleza 7.00 1 NULL 
+005 Fizica 6.00 1 35.50 
+005 Istorie 7.00 1 35.50 
+006 P.C.I 9.00 1 NULL 
+006 P.C.II 10.00 1 NULL
+Care este rezultatul interogarii SELECT COUNT() FROM Note in MS SQL Server?
+Un mesaj de eroare
+
+Se da tabelul NOte cu valorile
+002 Chimie 9.00 1 NULL
+002 Fizica 10.00 1 NULL 
+005 Chimie 5.00 1 NULL 
+005 Engleza 7.00 1 NULL 
+005 Fizica 6.00 1 35.50 
+005 Istorie 7.00 1 35.50 
+006 P.C.I 9.00 1 NULL 
+006 P.C.II 10.00 1 NULL
+Care dintre urmatorele interogari se pot folosi in MS SQL Server pentru a obtine rezultatul corect
+SELECT Sum(taxa) FROM Note sau SELECT Sum(taxa) FROM Note WHERE taxa is Not Null
+
+
+Se da tabelul NOte cu valorile
+002 Chimie 9.00 1 NULL
+002 Fizica 10.00 1 NULL 
+005 Chimie 5.00 1 NULL 
+005 Engleza 7.00 1 NULL 
+005 Fizica 6.00 1 35.50 
+005 Istorie 7.00 1 35.50 
+006 P.C.I 9.00 1 NULL 
+006 P.C.II 10.00 1 NULL
+In MS SQL Server rezultatul interogarii : SELECT TOP 1 nota FROM Note este
+9.00
+
+Test6
+
+La executia interogarii SELECT POWER(2,-3) in MS SQL Server se obtine
+0
+
+Pentru a determina in MS SQL Server restl obtinut din impartirea unui numar la altul se folseste functia
+%
+
+Pentru a calcula in MS SQL Server logaritmul natural al unui numar trebuie scris:
+SELECT LOG(5)
+
+Se foloseste interogarea SELECT RIGHT(departament 2) FROM Employees , iar rezultatul obtinut nu  se vede nimic .Explicatia este
+Campul depapartament este de tip numeric iar functia RIGHT se poate folosi doar pentru litere
+
+Pentru a introduce in MS SQL Server un sir de caractere in interiorul altui sir de caractere de la pozitia specificata,stegand un numar de caractere cerut se foloseste functia
+STUFF
+
+Pentru a afisa in MS SQL Server lungimea unui sir de caractere se foloseste functia
+LEN
+
+Pentru a putea executa fara erori interogarea SELECT POWER(a,b) FROM Numere trebuia ca
+In coloana a sa fie numere negative subunitare,iar in coloana b sa fie numere negative intregi
+
+Pentru a afisa cel mai mic intreg mai mare sau egal cu expreisa numerica data se foloseste functia
+CEILING()
+
+Pentru a transforma un tip de date in altul cu posibilitatea folosirii unui parametru de stil care preciseaza formatul exact care va fi utilizat
+la transformarea se folseste functia 
+CONVERT
+
+Se execută interogarea: 
+SELECT SUBSTRING(title, 1, 30) AS Title, ytd_sales
+FROM titles 
+WHERE CONVERT(char(20), ytd_sales) LIKE '3%
+Şi apoi interogarea: 
+SELECT SUBSTRING(title, 1, 30) AS Title, ytd_sales 
+FROM titles 
+WHERE CAST(ytd_sales AS char(20)) LIKE '3%
+Care este diferenta dintre cele două?
+După prima interogare se obtine lista titlurilor ale căror vânzări încep cu 3, iar după cea de-a doua interogare se obține lista titlurilor ale căror
+vânzări încep cu 3
+
+Test7
+ 
+Suinterogarile care au rezultat mai multe randuri din tabele
+Au subinterogare plasata la dreapta conditiei care se verifica
+
+Subinterogarile care au ca rezultat un singur rand
+Au suinterogarile plasata la dreapta operatorului de comparare
+
+Interogarea:
+SELECT job_id,last_name,AVG(salary)
+FROM employees
+GROUP BY job_id;
+intoarce
+Identificatorul serviciului , numele si media salariilor din cadrul tabelului "employees"
+
+Se creeaza o subinterogare in care se foloseste doar un operator de comparare fara predicat si care returneaza stundetii ce au aceleasi note cu cele ale studentului nu numele Radu.Se poate face
+acelasi lucru si pentru studentul cu numele Manta ?
+Nu, pentru ca suinterogarea interioara intoarce mai multi studenti cu numele Manta
+
+Se doreste sa se afle cu ajutorul unei subinterogari din cadrul unui tabel cu angajati cine lucreaza in acelasi departament cu un anumit angajat. Nu se cunoaste valoarea pentru departamentul
+angajatorului.Rezultatul obtinut este :
+O lista de angajati pentru al caror departament nu se cunosc valorile
+
+Suinterogarile care au ca rezultat un sngur rand
+Atat interogarea interioara cat si cea exterioara pot prelua date din mai multe tabele
+
+În interogarea: 
+SELECT title, producer,year 
+FROM d_cds 
+WHERE year > ALL (SELECT year FROM d_cds WHERE producer = 'The Music Man');
+Toate răspunsurile sunt corecte
+
+Care dintre următoarele variante este corectă?
+SELECT nume, prenume, curs, nota
+FROM student inner join note on student.cods=note.cods 
+WHERE nota <= ALL (SELECT nota FROM note)
+
+Următoarea interogare: 
+SELECT employee_id, manager_id, department_id 
+FROM employees
+WHERE (manager_id, department_id) IN (SELECT manager_id, department_id
+FROM employees 
+WHERE employee_id IN (149,174)) AND employee_id NOT IN (149,174)
+întoarce:
+Un mesaj de eroare deoarece interogarea interioară întoarce mai multe rânduri
+
+Următoarea interogare afişează: SELECT Curs, Nota FROM Note
+WHERE Cods =(SELECT Cods
+FROM Student
+WHERE Nume = 'Radu' AND Prenume='Tiberiu'
+ORDER BY Cods);
+Lista cursurilor şi notelor obţinute de studentul Radu Tiberiu
+
+Test8
+
+Atunci cand se utilizeaza un pointer, utilizatorul apeleaza metoda
+AddRef
+
+O componenta este
+O parte de cod ce poate fi introduc in cadrul alotr componente
+
+O clasa derivata este  o clasa 
+De la care se mosteneste
+
+Polimorfismul inseamna
+Abilitatea de stabilire de ierarhii intre parinti si copii
+
+Fiecare obiect COM
+Este o instanta a unei clase particulare si suporta un numar de interfete
+
+Tehnologia COM
+Definste un standard prin care fiecare element component al unei aplicatii isi oferca serviciile sub forma unuia sau mai multor oboecte unei alte aplicatii
+
+Care este cea mai potrivta tehnologiw bazata pe componente pentru realizarea de aplicatii WEb ??
+COM
+
+Pentru a reutiliza codul scris anterior in cadrul unei alte aplicatii , putand folosi fragmente de cod scrise in limbaj de programare diferite se poate apela la 
+Toate mentinonate mai sus
+
+Tabelul care contine un pointer catre fiecare metoda a interfetei respective este numit:
+Dispatch
+
+Accesul la datele din cadrul unei componente se face prin intermediul
+Unei metode

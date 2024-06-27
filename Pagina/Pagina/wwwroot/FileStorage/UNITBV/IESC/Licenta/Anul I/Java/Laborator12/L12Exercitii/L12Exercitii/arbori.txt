@@ -1,0 +1,4 @@
+Tip arbore: brad, face parte din clasa conifere, are o inaltime de 15 metri la varsta de 5 ani, iar tipul frunzei este aciforma.
+Tip arbore: mar, face parte din clasa foioase, are o inaltime de 3 metri la varsta de 2 ani, iar tipul frunzei este ovala.
+Tip arbore: stejar, face parte din clasa foioase, are o inaltime de 10 metri la varsta de 4 ani, iar tipul frunzei este lobata.
+Tip arbore: tei, face parte din clasa foioase, are o inaltime de 30 metri la varsta de 20 ani, iar tipul frunzei este rotunde.

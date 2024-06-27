@@ -1,0 +1,39 @@
+﻿@page
+@model Pagina.Pages.GenerarePaginaUniversitate.FacultatiUniversitateModel
+
+@{
+    Layout = "Layout/LayoutPagina.cshtml";
+    int count = 0;
+}
+
+<link rel="stylesheet" href="~/css/PaginaUniversitate.css" asp-append-version="true" />
+
+
+
+
+<div class="container">
+    <div class="row">
+        @{
+            foreach (var university in Model.FacultyList)
+            {
+                if (count % 3 == 0 && count != 0)
+                {
+                    @:</div><div class="row">
+                }
+
+                <div class="col-sm-6">
+                <a asp-page="">
+                    <div class="card m-sm-4 mb-sm-3 CardVer "  style="background-image: url('../../Images/Faculties/@Model.Universitate/@(university).jpeg')">
+                        <div class="card-body p-sm-4">
+                            <h5 class="card-title text-center text-decoration-none" id="titlu">@university</h5>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                count++;
+            }
+        }
+    </div>
+</div>

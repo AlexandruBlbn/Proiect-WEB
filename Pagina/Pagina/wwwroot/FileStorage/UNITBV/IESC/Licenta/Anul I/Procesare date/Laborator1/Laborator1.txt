@@ -1,0 +1,24 @@
+--create database Exemplu_b;
+use Exemplu_b;
+create table Ex1_serban_alexandru
+(
+	coloana_a int constraint nr_coloana_a unique,
+);
+alter table Ex1_serban_alexandru 
+	add coloana_b varchar(20) NULL;
+alter table Ex1_serban_alexandru 
+	drop column coloana_b;
+alter table Ex1_serban_alexandru 
+	add coloana_b varchar(20) null constraint nr_coloana_b unique;
+alter table Ex1_serban_alexandru 
+	add constraint ck_coloana_a check(coloana_a>1);
+alter table Ex1_serban_alexandru
+	drop nr_coloana_b;
+alter table Ex1_serban_alexandru
+	drop column coloana_b;
+alter table Ex1_serban_alexandru
+	add coloana_b int constraint pk_coloana_b primary key;
+alter table Ex1_serban_alexandru
+	add coloana_c int null constraint fk_coloana_c references Ex1_serban_alexandru(coloana_a);
+alter table Ex1_serban_alexandru
+	add coloana_d decimal(6,3) default 0.081;

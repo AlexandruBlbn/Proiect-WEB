@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <style>
+     .c7{
+        text-decoration : underline;
+        font-style : normal ;
+     }
+    *.c1 {
+	   color: #ee3e80 ;} /*Acest selector corespunde paragrafului 1 si titlului 1*/
+	p.c2{
+	   font-style: italic;} /*Acest selector corespunde doar paragrafului 2*/
+	*.c2.c3{
+	   background-color: rgb(200,200,200);} /*Acest selector corespunde blocului de diviziune 2 si legaturii*/
+	div.c2.c3.c6{
+	   text-transform: uppercase;} /*Acest selector corespunde doar blocului de diviziune 2*/
+  </style> 
+</head>
+<body>
+  <p class="c1"> paragraph 1 </p>
+  <p class="c2"> paragraph 2 </p>
+  <div class="c3 c4">division block 1</div>
+  <div class="c2 c3 c6">division block 2</div>
+  <a href="#" class="c2 c3 c4 c5 c6"> a link</a>
+  <h1 class="c0 c1">Paragraf</h1>
+</body>
+</html>

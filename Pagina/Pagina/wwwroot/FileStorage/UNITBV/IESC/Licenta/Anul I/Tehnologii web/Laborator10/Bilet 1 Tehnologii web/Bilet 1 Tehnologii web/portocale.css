@@ -1,0 +1,114 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  background-image: url("/DSC_0079.JPG");
+  background-repeat: no-repeat;
+  line-height: 1.4em;
+}
+.page {
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
+  background-color: #e2e2e2;
+  background-image: url(/DSC_0079.JPG);
+}
+/************************************  Header ************************************/
+.banner p {
+  float: right;
+  margin: 100px 70px 0 0;
+  color: #036;
+  font-size: 30px;
+}
+.banner p::after {
+  content: " portocale";
+  color: #f36207;
+}
+.banner img {
+  margin: 10px 0 0 10px;
+}
+.nav ul {
+  margin: 8px auto;
+  padding: 0;
+  width: 98%;
+}
+.nav li {
+  display: inline-block;
+}
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #f36207;
+  padding: 3px 5px;
+}
+.nav a:hover,
+.current a {
+  background-color: #0b0b61;
+}
+
+
+/************************************  Content ************************************/
+
+.content {
+  width: 940px;
+  float: left;
+  margin: 10px 0 10px 0;
+}
+
+.sidebar {
+  float: left;
+  width: 22%;
+  margin: 0 15px 0 15px;
+}
+.sidebar ul p {
+  color: #f36207;
+  margin: 0;
+}
+.side-nav {
+  padding-left: 0;
+}
+.side-nav li {
+  list-style-type: none;
+  background-color: #f36207;
+  margin-bottom: 3px;
+  padding: 2px;
+}
+.side-nav a {
+  text-decoration: none;
+  color: #fff;
+}
+.info {
+  float: left;
+  width: 47%;
+  background-color: #ffffff;
+  padding: 0 5px 0 5px;
+}
+.benefits li {
+  color: #f36207;
+}
+.content p {
+  color: #333;
+}
+h2 {
+  color: #036;
+}
+
+/************************************  Footer ************************************/
+
+.footer {
+  height: px;
+  clear: left;
+  background-color: #f36207;
+}
+.footer ul {
+  padding: 5px;
+}
+.footer li {
+  list-style-type: none;
+  display: inline;
+  margin-left: 30px;
+}
+.footer li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 100%;
+}

@@ -1,0 +1,93 @@
+USE  <nume_baza_de_date>
+SELECT Student.Nume, Student.Prenume, Note.Curs
+FROM Student INNER JOIN [Note] ON Student.CodS = Note.CodS
+WHERE (((Student.Nume)="radu") AND ((Student.Prenume)="tiberiu"));
+
+
+USE  <nume_baza_de_date>
+SELECT Student.Nume, Student.Prenume, Student.Invatamant, Student.Situatie
+FROM Student
+WHERE (((Student.Sex)="f") AND ((Student.Invatamant)="z") AND ((Student.Situatie)="b"));
+
+USE  <nume_baza_de_date>
+SELECT Student.Nume, Student.Prenume, Student.Situatie, Student.Invatamant, Student.Sex, Student.Data_inceput
+FROM Student
+WHERE (((Student.Situatie)="b")) OR (((Student.Sex)="f") AND ((Student.Data_inceput)=#10/1/01#));
+
+USE  <nume_baza_de_date>
+SELECT Student.Nume, Student.Prenume, Student.Situatie, Student.Data_inceput
+FROM Student
+WHERE (((Student.Situatie)="b") AND ((Student.Data_inceput)=#10/1/01#));
+
+USE  <nume_baza_de_date>
+SELECT COUNT(Student.CodS) AS Numar_studenti, Student.Data_inceput, Student.Data_sfarsit
+FROM Student
+GROUP BY Student.Data_inceput, Student.Data_sfarsit
+HAVING (((Student.Data_sfarsit) Is Null));
+
+ USE  <nume_baza_de_date>
+SELECT Student.Nume, Student.Prenume, Avg(Note.Nota) AS Media_notelor
+FROM Student INNER JOIN [Note] ON Student.CodS = Note.CodS
+GROUP BY Student.Nume, Student.Prenume;
+
+
+USE  <nume_baza_de_date>
+SELECT Student.Nume, Student.Prenume, Avg(Note.Nota) AS AvgOfNota
+FROM Student INNER JOIN [Note] ON Student.CodS = Note.CodS
+GROUP BY Student.Nume, Student.Prenume
+HAVING (((Avg(Note.Nota))>8));
+
+USE  <nume_baza_de_date>
+SELECT * 
+FROM [note]
+WHERE note.cods NOT IN (SELECT student.cods FROM student WHERE jud='is') ;
+
+USE  <nume_baza_de_date>
+SELECT DISTINCT Student.Nume, Student.Prenume, Note.Nota
+FROM Student INNER JOIN [Note] ON Student.CodS = Note.CodS
+WHERE (((Note.Nota)>Any (SELECT nota FROM [Note])));
+
+USE  <nume_baza_de_date>
+SELECT DISTINCT student.Nume, student.prenume, note.taxa
+FROM student INNER JOIN [Note] ON student.CodS = Note.CodS
+WHERE (((note.taxa) In 
+(SELECT  Max(Note.Taxa) AS Max_taxa
+FROM Student INNER JOIN [Note] ON Student.CodS = Note.CodS)));
+USE  <nume_baza_de_date>
+SELECT Student.nume, Student.prenume
+FROM student
+WHERE cods IN(SELECT cods
+		FROM note
+		WHERE taxa = 35.50);
+
+USE  <nume_baza_de_date>
+SELECT Curs, Nota
+FROM Note
+WHERE Cods =(SELECT Cods
+		FROM Student
+		WHERE Nume = 'Radu' AND Prenume='Tiberiu');
+USE  <nume_baza_de_date>
+SELECT Curs, Nota
+FROM Note
+WHERE Nota < (SELECT MAX(Nota)
+FROM Note
+WHERE Cods = '005');
+
+
+
+USE  <nume_baza_de_date>
+SELECT Nume, Prenume, Curs, Nota
+FROM Student INNER JOIN Note ON Student.Cods=Note.Cods
+WHERE Nota = ANY(SELECT MIN(nota)
+FROM Note
+GROUP BY Cods);
+
+USE  <nume_baza_de_date>
+SELECT nume, prenume, curs, nota
+FROM student inner join note on student.cods=note.cods 
+WHERE nota <= ALL (SELECT nota 
+
+
+
+
+

@@ -1,0 +1,43 @@
+use SITUATIE;
+update Note
+	set Taxa = 35.5 
+	where CodS='005' and Curs='Fizica';
+update Note
+	set Taxa = 35.5
+	where CodS = '005' and Curs = 'Istorie';
+update Note
+	set Taxa = 25.75
+	where CodS = '002' and Curs = 'Chimie';
+select * from Student 
+	where Prenume = 'Andrei';
+select * from Student
+	where Prenume!='Cristina';
+select Nume,Prenume from Student
+	where Prenume ='Andrei' or Prenume ='Cristina';
+select Nume,Prenume from Student
+	where upper(Nume) like'B%';
+select Nume,Prenume from Student
+	where upper(Nume) like'%A';
+select Nume,Prenume from Student
+	where upper(Nume) like'%T%';
+select * from Student inner join Note on Student.CodS=Note.Cods
+	where Taxa between 20 and 40;
+select * from Student inner join Note on Student.CodS=Note.Cods
+	where Taxa not between 20 and 40 or Taxa is null;
+select * from Student 
+	where Nume between  'a' and  'i'
+	order by Nume;
+SELECT Student.Nume, Student.Prenume FROM Student
+	WHERE (((Student.CodS) BETWEEN (SELECT MIN(CodS) FROM [Note] ) AND (SELECT MAX(CodS) FROM [Note])))
+	ORDER BY Student.Nume;
+SELECT Student.Nume, Student.Prenume FROM Student
+	WHERE EXISTS(SELECT * FROM [Note] WHERE Note.CodS=Student.CodS);
+SELECT Student.Nume, Student.Prenume, Student.Jud FROM Student
+	WHERE (((Student.Jud) IN ('BV','IS','CV')));
+SELECT Student.Nume, Student.Prenume, Student.Jud FROM Student
+	WHERE (((Student.Jud) NOT IN ('BV')));
+SELECT Student.Nume, Student.Prenume, Note.Nota FROM Student INNER JOIN [Note] ON Student.CodS = Note.CodS
+	WHERE (((Note.Nota)=5))
+	UNION
+	SELECT Student.Nume, Student.Prenume, Note.Nota FROM Student INNER JOIN [Note] ON Student.CodS = Note.CodS
+		WHERE (((Note.Nota)>=7));

@@ -1,0 +1,131 @@
+1.	ABS(). Să se afişeze toate numerele negative ca fiind pozitive 
+SELECT ABS(a) FROM numere
+SELECT ABS(b) FROM numere
+
+2.	CEILING() şi FLOOR(). Să se afişeze cel mai mic număr întreg din b. Să se afişeze cel mai mare număr întreg din b. 
+SELECT  CEILING(b) FROM numere
+SELECT FLOOR(b) FROM numere
+
+3.	Să se transforme numerele din coloana a în grade şi respectiv radiani. 
+SELECT DEGREES(a) FROM numere
+SELECT RADIANS(a) FROM numere
+
+4.	SIN(), COS(), TAN(), SINH(), COSH(), TANH(). Să se aplice funcţiile trigonometrice pe coloana a. 
+SELECT SIN(a), SELECT COS(a), SELECT TAN(a), SELECT SINH(a), SELECT COSH(a), SELECT TANH(a)
+
+5.	ea   (EXP(a)). Să se ridice e la puterea a. 
+SELECT EXP(a) FROM numere
+
+6.	LN(), LOG(). Să se afişeze logaritmul natural al coloanei a. să se afişeze logaritmul în baza 10 al coloanei b.
+SELECT LN(ABS(a)) FROM numere
+
+7.	POWER(). Să se ridice a la b. 
+SELECT POWER(a, b) FROM numere
+
+8.	SIGN(). Să se afişeze semnele coloanelor a şi b. Să se afişeze numai numerele pozitive de pe coloana a. 
+SELECT a, b FROM numere WHERE SIGN(a)=1
+
+9.	SQRT(). Să se extragă rădăcina pătrată din a. 
+SELECT SQRT(ABS(a)) FROM numere
+Sau
+SELECT SQRT(a) FROM numere WHERE SIGN(a)=1
+
+10.	Se cere să se afişeze data sistemului de pe calculatorul care găzduieşte programul SQL Server 
+SELECT GETDATE()
+
+11.	Să se afişeze numărul lunii, respectiv numele lunii datei curente a sistemului. 
+SELECT DATEPART(month, GETDATE())
+SELECT DATENAME(month, GETDATE())
+
+12.	Să se determine câţi ani au trecut de la începutul studiilor fiecărui student 
+USE  Student
+SELECT DATEDIFF(year, Data_inceput, GETDATE())
+FROM Student
+
+13.	Să se adauge 3 zile la data de început a studiilor fiecărui student 
+USE Student
+SELECT DATEADD(day, 3, Data_inceput) 
+FROM Student
+ 
+Funcţii caracter
+ 
+ASCII – valoarea de cod a caracterului celui mai din stânga
+CAST() – se foloseşte pentru a transforma un tip de date în altul
+CHAR – converteşte un int ASCII într-un caracter.  Ex. CHAR(13)
+CHARINDEX – afişează numărul de înregistrări ce conţin poziţia de început a unui şir de caractere specificat. Nu permite utilizare de caractere de înlocuire
+CONVERT() – transformă un tip de date în altul. Spre deosebire de funcţia CAST(), oferă un parametru de stil care precizează formatul exact care va fi utilizat la transformare. Cele mai folosite stiluri sunt 102 şi 112.
+DIFFERENCE – diferenţa dintre 2 şiruri de caractere (folosit pentru cuvinte scrise în limba engleză). 
+Pentru texte în limba engleză se foloseşte SOUNDEX – afişează 2 cuvinte care se scriu la fel, dar care se aud diferit
+LEFT – afişează un număr de caractere începând de la stânga Ex: primele 5
+LEN – afişează lungimea şirului de caractere
+LOWER – transformă literele mari în litere mici
+LTRIM – anulează spaţiile de la începutul şirului de caractere
+RTRIM - anulează spaţiile de la sfârşitul şirului de caractere
+NCHAR – afişează caracterul din setul UNICODE, utilizat la scrierea caracterelor ce provin din altă limbă decât engleză
+PATINDEX – afişează numărul de înregistrări ce conţin poziţia de început a unui şir de caractere specificat. Spre deosebire de CHARINDEX, permite utilizarea caracterelor de înlocuire.
+REPLACE – înlocuieşte un şir de caractere cu altul
+QUOTENAME – funcţie ce introduce delimitatori
+REPLICATE – repetă un şir de caractere de un anumit număr de ori
+REVERSE – întoarce un şir de caractere scris în ordine inversă
+RIGHT – întoarce un şir de caractere specificat începând din partea dreaptă
+SPACE – introduce un număr specificat de spaţii
+STUFF – introduce un şir de caractere în interiorul altui şir de caractere de la poziţia specificată, ştergând un număr de caractere cerut
+SUBSTRING – extrage un număr de caractere dintr-un şir începând de la poziţia specificată
+UNICODE – funcşie ce afişează valoarea întreagă corespunzătoare caracterului din setul de caractere UNICODE
+UPPER – utilizată pentru scrierea cu majuscule a elementelor unei coloane.
+Observaţie generală. Datele din baza de date nu se modifică
+
+1.	Să se afişeze toate numele din Student scrise cu litere mari 
+SELECT UPPER(Nume) FROM Student
+
+2.	Să se afişeze toate numele din Student scrise cu litere mici 
+SELECT LOWER(Nume) FROM Student
+
+3.	Să se afişeze datele din tabelul Student pe rânduri separate pentru studentul cu codul 005 
+SELECT nume+ ' ' + prenume, + CHAR(13) + Data_inceput, + CHAR(13) + Data_sfarsit 
+FROM student
+WHERE cods = ‘005’
+
+4.	Să se afişeze primele 4 caractere ale numelui fiecărui student, în ordine alfabetică 
+SELECT LEFT(nume, 5) FROM Student ORDER BY nume
+
+5.	Să se afişeze ultimele 3 caractere ale numelui fiecărui student în ordine alfabetică 
+SELECT RIGHT(nume, 3) FROM Student ORDER BY nume
+
+6.	Să se înlocuiască toate numele care încep cu ‘B’ cu şirul de caractere ‘ST’ 
+SELECT REPLACE(Nume, ‘B’, ‘ST’) FROM Student WHERE Nume LIKE ‘B%’
+
+7.	Să se afişeze lungimea şirului de caractere din coloana Nume
+SELECT LEN(RTRIM(LTRIM(Nume)) FROM Student
+
+8.	Să se convertească valorile din câmpul Taxa în valori de tip caracter
+SELECT CAST(Taxa AS CHAR(10)) FROM Note
+
+9.	Să se transforme data curentă a sistemului într-un şir de caractere cu un anumit format. 
+SELECT CONVERT(CHAR(8), GETDATE(), 112)
+
+10.	Să se afişeze numele şi iniţiala prenumelui studenţilor în ordine alfabetică
+SELECT nume, SUBSTRING(prenume, 1, 1) FROM student ORDER BY nume
+
+11.	Să se afişeze numele şi prenumele studenţilor cu prenumele la distanţă de 10 spaţii 
+SELECT RTRIM(nume) + ',' + SPACE(10) + LTRIM(prenume) FROM student ORDER BY nume
+
+12.	Să se afişeze codul ASCII şi litera corespunzătoare a iniţialei studenţilor
+SELECT ASCII(SUBSTRING(prenume, 1, 1)) AS CodASCII, 
+CHAR(ASCII(SUBSTRING(prenume, 1, 1)) AS Initiala 
+FROM Student
+
+13.	Să se repete prenumele fiecărui student de 2 ori, afişându-se rezultatele în ordine alfabetică 
+USE Situatie 
+SELECT REPLICATE(prenume, 2) 
+FROM Student ORDER BY prenume
+
+14.	Să se afişeze prenumele fiecărui student cu literele aşezate în ordine inversă
+USE Situatie 
+SELECT REVERSE(prenume) 
+FROM Student ORDER BY prenume
+
+15.	Să şteargă 3 litere începând din poziţia a doua a fiecărui prenume, intercalându-se în locul lor şirul ‘abc’ 
+USE Situatie
+SELECT STUFF(prenume, 2, 3, ‘abc’)
+FROM Student

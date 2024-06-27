@@ -1,0 +1,37 @@
+
+html {
+    font-size: 16px;
+    text-align: center;
+    background-color: #ccc;
+   font-family: "Georgia";
+ }
+
+ h1 {
+    color: red;
+    font-family: "Courier New";
+    text-decoration: underline;
+}
+
+h2 {
+    color: blue;
+}
+#idh3 {
+    color: magenta;
+}
+
+#idh4 {
+    color: green;
+}
+
+#idh5 {
+    color: pink;
+}
+p {
+    font-family: "Arial";
+    font-size: 12px;
+    font-style: italic;
+}
+
+p strong {
+    color: green;
+}

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1636575043 source:c:\users\mariu\desktop\facultate\pclp\laborator5\problema_4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site_Web</title>
+    <style>
+        body {
+            background-image: url(images/dark-wood.jpg);
+            font-family: Georgia, Times, serif;
+            line-height: 1.4em;
+        }
+
+        #page {
+            width: 940px;
+            color: #666666;
+            font-family: Georgia, Times, serif;
+            background-color: #ffffff;
+            margin: 5px auto 20px auto;
+        }
+
+        #header {
+            height: 160px;
+            background-image: url("images/header.jpg");
+        }
+
+        #navigation {
+            height: 30px;
+            background-color: #aeaca8;
+        }
+
+        #navigation ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            ;
+        }
+
+        #navigation ul li a :hover,
+        #navigation ul li a.curent {
+            color: black;
+        }
+
+        #navigation ul {
+            margin: 0px;
+            padding: 5px 0px 30px 20px;
+        }
+
+        #navigation li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .courses {
+            width: 659px;
+            float: left;
+            border-right: 1px solid #eeeeee;
+        }
+
+        figure {
+            width: 290px;
+            padding: 5px;
+            border: 1px solid #eeeeee;
+            margin: 20px;
+            float: left;
+        }
+
+        .descriere {
+            width: 317px;
+            float: left;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: normal;
+        }
+
+        h2 {
+            margin: 20px 0px 5px 0px;
+        }
+
+        h3 {
+            margin: 0px 0px 10px 0px;
+            color: #de6581;
+        }
+
+        .sidebar {
+            width: 230px;
+            float: left;
+            padding: 0px 0px 0px 20px;
+
+        }
+
+        .sidebar a {
+            color: rgb(222, 101, 129);
+            display: block;
+        }
+
+        .sidebar a:hover {
+            color: #985d6a;
+            background-color: #efefef;
+        }
+
+        .sidebar h3 {
+            padding: 30px 0px 10px 0px;
+            color: #de6581;
+        }
+
+        .sidebar .recipies a {
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        #footer {
+            height: 30px;
+            background-color: #aeaca8;
+            color: #ffffff;
+            clear: left;
+            font-size: 80%;
+            padding: 7px 0px 0px 20px;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <div id="page">
+
+        <div id="header">
+
+            <img src="images/header.jpg">
+            <div id="navigation">
+                <ul>
+                    <li><a href="#" class="curent">home</a></li>
+                    <li><a href="#">classes</a></li>
+                    <li><a href="#">catering</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="content">
+            <div class="courses">
+
+                <div class="article">
+                    <figure>
+                        <img src="images/bok-choi.jpg">
+                        <figcaption>Bok Choi</figcaption>
+                    </figure>
+                </div>
+
+                <div class="descriere">
+                    <h2>Japanese Vegetarian</h2>
+                    <h3>Five week course in London</h3>
+                    <p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selectionof
+                        rice and noodle dishes</p>
+                </div>
+
+                <div class="article">
+                    <figure>
+                        <img src="images/teriyaki.jpg">
+                        <figcaption>Teriyaki</figcaption>
+                    </figure>
+
+                </div>
+
+                <div class="descriere">
+                    <h2>Sauces Masterclass</h2>
+                    <h3>One day workshop</h3>
+                    <p>A five week introduction to traditional Japanese vegetarian meals, teahing you a selectionof rice
+                        and noodle dishes</p>
+                </div>
+
+            </div>
+
+            <div class="sidebar">
+                <div class="recipies">
+                    <h3> Popular Recipies </h3>
+                    <a href="#">Yakitori (grilled chicken) </a>
+                    <a href="#">Tsukune (minced chicken patties) </a>
+                    <a href="#">Okonomiyaki (savory pancakes) </a>
+                    <a href="#">Mizutaki(chicken stew) </a>
+                </div>
+
+                <div class="contact">
+                    <h3>Contact</h3>
+                    Yoko's Kitchen <br /> 27 Redchurch Street <br /> Shoredtch <br /> London E2 7DP
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            &copy; 2011 Yoko's Kitchen
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

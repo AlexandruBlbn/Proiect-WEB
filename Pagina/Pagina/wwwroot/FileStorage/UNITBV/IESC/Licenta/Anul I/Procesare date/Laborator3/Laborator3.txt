@@ -1,0 +1,44 @@
+use SITUATIE;
+select Note.* from Note;
+select Student.Nume, Student.Prenume from Student 
+	where Data_sfarsit is not null;
+insert into Note(CodS,Curs,Nota,An,Taxa)
+	values('005','Fizica',6,'1',35.5);
+insert into Note(CodS,Curs,Nota,An)
+	values('005','Chimie',5,'1');
+insert into Note(CodS,Curs,Nota,An)
+	values('002','Fizica',10,'1');
+insert into Note(CodS,Curs,Nota,An,Taxa)
+	values('002','Chimie',9,'1',25.75);
+insert into Note(CodS,Curs,Nota,An,Taxa)
+	values('005','Istorie',7,'1',35.5);
+insert into Note(CodS,Curs,Nota,An)
+	values('005','Engleza',7,'1');
+insert into Note(CodS,Curs,Nota,An)
+	values('006','PC I',10,'1');
+insert into Note(CodS,Curs,Nota,An)
+	values('006','P.C.II',9,'1');
+SELECT  DISTINCT Student.Nume, Student.Prenume FROM Student INNER JOIN Note ON Student.CodS=Note.CodS
+	WHERE Taxa IS NOT NULL And Data_sfarsit Is Null;
+SELECT Nume, Prenume, Curs, Nota FROM Student INNER JOIN Note ON Student.Cods=Note.Cods;
+SELECT DISTINCT Student.Prenume FROM Student;
+SELECT Student.Nume, Student.Prenume, Note.Nota FROM Student INNER JOIN [Note] ON Student.CodS = Note.CodS
+	WHERE (((Student.Nume)='Radu') AND ((Student.Prenume)='Tiberiu'));
+SELECT Note.Taxa, [taxa]+100000 AS Taxa_marita FROM [Note];
+SELECT Note.Taxa, [taxa]-[taxa]*1/4 AS Taxa_scazuta FROM [Note]
+	WHERE (((Note.Taxa)>0));
+SELECT Note.Taxa, [taxa]*1.1 AS Taxa_marita from [Note]
+	WHERE (((Note.Taxa)>0));
+UPDATE Note
+	SET Taxa = Taxa*1.1 from Student inner join Note on Student.CodS=Note.CodS
+		WHERE  Nume='Radu' and Prenume='Tiberiu';
+SELECT [Nume]+' '+[Prenume] AS [Nume si prenume] from Student;
+ALTER TABLE Note DROP COLUMN Taxa;
+ALTER TABLE Note ADD Taxa DECIMAL(7,2);
+UPDATE Note
+	SET Taxa=35.5 from Student INNER JOIN Note ON Student.cods=Note.cods
+		WHERE Note.CodS='005' And (Note.Curs='fizica' Or Note.Curs='istorie');
+UPDATE Note
+	Set Taxa=Taxa*1.1 FROM Student INNER JOIN Note ON Student.CodS=Note.CodS
+		WHERE Student.Nume='Radu' and Student.Prenume='Tiberiu' and (Note.Curs='fizica' or Note.Curs='istorie');
+SELECT Note.* FROM Note;

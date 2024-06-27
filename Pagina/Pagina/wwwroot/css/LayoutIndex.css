@@ -1,0 +1,50 @@
+﻿body {
+}
+
+
+.nav-obiect {
+    text-decoration: none;
+    color: #F1F6F9 !important;
+    font-size: 1.4rem;
+    font-family: 'UT Sans';
+    font-weight: bold;
+    border-radius: 30px;
+    margin: 0px 3px;
+    padding: 1px 10px !important;
+    -webkit-text-stroke: 0px #F8F8F8;
+    text-shadow: 0px 1px 5px #23430C;
+}
+    .nav-obiect:hover {
+        background-color: #394867 !important;
+        color: #F1F6F9 !important;
+        border-radius: 30px;
+
+    }
+
+.nav-title-prop {
+    padding-bottom: 0px;
+    color: #212A3E !important;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid gray;
+}
+
+.footer-logout {
+    -webkit-text-stroke: 0px #F8F8F8;
+    text-shadow: 0px 1px 5px #23430C;
+    border-radius: 30px;
+    color: #F1F6F9 !important;
+    text-decoration: none;
+}
+
+.footer {
+    grid-area: footer !important;
+}
+    .footer-logout:hover {
+        
+        color: #F1F6F9 !important;
+        border-radius: 30px;
+    }
+
+
+

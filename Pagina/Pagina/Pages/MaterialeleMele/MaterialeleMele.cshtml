@@ -1,0 +1,27 @@
+﻿@model List<Pagina.Pages.MaterialeleMele.FileModel>
+
+@{
+    ViewData["Title"] = "Materialele Mele";
+}
+
+<h2>Materialele Mele</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nume Fișier</th>
+            <th>Acțiuni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var file in Model)
+        {
+            <tr>
+                <td>@file.FileName</td>
+                <td>
+                    <a href="@Url.Action("DownloadFile", "File", new { filename = file.FileName })" class="btn btn-primary">Descarcă</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
